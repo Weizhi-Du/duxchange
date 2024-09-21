@@ -16,3 +16,7 @@ This project predicts stock prices using a Long Short-Term Memory (LSTM) neural 
    ```bash
    git clone https://github.com/weizhi-du/duxchane.git
    cd stock-prediction
+
+
+![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/stock-prediction)
+![GitHub license](https://img.shields.io/github/license/yourusername/stock-prediction)

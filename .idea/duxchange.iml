@@ -1,7 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/venv/include" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/Markdown-3.7.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/MarkupSafe-2.1.5.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/astunparse" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/astunparse-1.6.3.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/clang" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/flatbuffers" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/flatbuffers-24.3.25.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/gast" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/gast-0.6.0.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/google" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/google_pasta-0.2.0.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/grpc" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/grpcio-1.66.1.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/libclang-18.1.1.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/markdown" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/markupsafe" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/ml_dtypes-0.4.1.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/numpy-1.26.4.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/numpy/.dylibs" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/numpy/array_api" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/numpy/core/include" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/numpy/core/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/numpy/core/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/numpy/f2py/tests/src/module_data" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/numpy/f2py/tests/src/regression/gh25337" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/opt_einsum" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/opt_einsum-3.3.0.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/pasta" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/protobuf-4.25.5.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/tensorboard" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/tensorboard-2.17.1.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/tensorboard_data_server" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/tensorboard_data_server-0.7.2.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/tensorflow" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/tensorflow-2.17.0.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/tensorflow_io_gcs_filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/tensorflow_io_gcs_filesystem-0.37.1.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/termcolor" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/termcolor-2.4.0.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/werkzeug" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/werkzeug-3.0.4.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/wheel" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/wheel-0.44.0.dist-info" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/wrapt" />
+      <excludeFolder url="file://$MODULE_DIR$/venv/lib/python3.11/site-packages/wrapt-1.16.0.dist-info" />
+    </content>
     <orderEntry type="jdk" jdkName="Python 3.11" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
