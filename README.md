@@ -1,12 +1,19 @@
-# Stock Market Prediction Using LSTM
+# Duxchange - A Stock Price Predictor
 
-This project predicts stock prices using a Long Short-Term Memory (LSTM) neural network.
+This repository serves as my submission to the WUCG Hackathon at WashU. It's a project that predicts stock prices using a Long Short-Term Memory (LSTM) neural network. 
+
+## Team Members
+
+**Weizhi Du**
+- Sophomore
+- Computer Science & Financial Engineering
+- It's all on me. I did all the work :)
 
 ## Features
 
 - Fetches historical stock data using Yahoo Finance API.
 - Preprocesses data for training.
-- Trains an LSTM model for prediction.
+- Trains an LSTM model, a recurrent neural network (RNN), for prediction.
 - Visualizes actual vs. predicted stock prices.
 
 ## Installation
@@ -17,6 +24,21 @@ This project predicts stock prices using a Long Short-Term Memory (LSTM) neural 
    git clone https://github.com/weizhi-du/duxchane.git
    cd stock-prediction
 
+2. **Clone the repository:**
 
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/stock-prediction)
-![GitHub license](https://img.shields.io/github/license/yourusername/stock-prediction)
+   ```bash
+   git clone https://github.com/weizhi-du/duxchane.git
+   cd duxchange
+   
+3. **Install required packages:**
+
+   ```bash
+   pip install -r requirements.txt
+
+4. **Example Usage:**
+
+   ```bash
+   python src/main.py --ticker AAPL --start_date 2010-01-01 --end_date 2023-10-01
+
+![GitHub last commit](https://img.shields.io/github/last-commit/weizhi-du/duxchange)
+![GitHub license](https://img.shields.io/github/license/weizhi-du/duxchange)
