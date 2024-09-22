@@ -6,7 +6,6 @@ tensorflow
 keras
 yfinance
 yahoo_fin
-streamlit
 flask
 flask_cors
 

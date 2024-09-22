@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 
 def evaluate_model(model, X_test, y_test, scaler, ticker):
     """
-    Evaluate the model's performance on the test set.
+    Evaluate with the test dataset.
     """
     predictions = model.predict(X_test)
-    # Inverse transform predictions
+
     y_test_scaled = scaler.inverse_transform(
         np.concatenate([y_test.reshape(-1, 1), np.zeros((len(y_test), scaler.n_features_in_ - 1))], axis=1)
     )[:, 0]
@@ -35,7 +35,6 @@ def plot_results(y_true, y_pred, ticker):
     plt.ylabel('Price')
     plt.legend()
 
-    # Save the plot
     if not os.path.exists('data'):
         os.makedirs('data')
     plot_path = os.path.join('data', f'{ticker}_prediction.png')

@@ -10,7 +10,6 @@ from model_training import train_model, save_model
 from model_evaluation import evaluate_model, plot_results
 from prediction import make_future_predictions, plot_future_predictions
 
-# src/main.py
 
 def main(ticker, start_date, end_date, days_ahead):
     print(f"Loading and preprocessing data for {ticker} from {start_date} to {end_date}...")

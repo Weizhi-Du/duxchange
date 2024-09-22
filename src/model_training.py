@@ -6,7 +6,7 @@ import os
 
 def build_model(input_shape):
     """
-    Build an LSTM model that accepts multiple features.
+    Build the LSTM model.
     """
     model = Sequential()
     model.add(LSTM(units=50, return_sequences=True, input_shape=input_shape))
@@ -39,7 +39,7 @@ def train_model(X_train, y_train, X_val=None, y_val=None, epochs=20, batch_size=
 
 def save_model(model, model_name='lstm_model.h5'):
     """
-    Save the trained model to disk.
+    Save the trained model.
     """
     if not os.path.exists('models'):
         os.makedirs('models')
