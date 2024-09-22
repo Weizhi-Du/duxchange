@@ -5,3 +5,7 @@ scikit-learn
 tensorflow
 keras
 yfinance
+yahoo_fin
+streamlit
+flask
+

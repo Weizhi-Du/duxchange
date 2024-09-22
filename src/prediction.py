@@ -3,6 +3,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
 def make_future_predictions(model, data, scaler, time_step=60, days_ahead=30):
     """
@@ -39,7 +40,7 @@ def make_future_predictions(model, data, scaler, time_step=60, days_ahead=30):
 
 def plot_future_predictions(future_predictions, data, ticker):
     """
-    Plot the predicted future prices along with historical data.
+    Plot and save the predicted future prices along with historical data.
     """
     last_date = data.index[-1]
     future_dates = pd.date_range(last_date + pd.Timedelta(days=1), periods=len(future_predictions))
@@ -51,4 +52,10 @@ def plot_future_predictions(future_predictions, data, ticker):
     plt.xlabel('Date')
     plt.ylabel('Price')
     plt.legend()
-    plt.show()
+
+    # Save the plot
+    if not os.path.exists('data'):
+        os.makedirs('data')
+    plot_path = os.path.join('data', f'{ticker}_future_prediction.png')
+    plt.savefig(plot_path)
+    plt.close()
