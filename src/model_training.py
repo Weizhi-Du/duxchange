@@ -6,12 +6,12 @@ import os
 
 def build_model(input_shape):
     """
-    Build an LSTM model.
+    Build an LSTM model that accepts multiple features.
     """
     model = Sequential()
     model.add(LSTM(units=50, return_sequences=True, input_shape=input_shape))
     model.add(LSTM(units=50))
-    model.add(Dense(units=1))
+    model.add(Dense(units=1))  # Output layer predicts the 'Close' price
     model.compile(optimizer='adam', loss='mean_squared_error')
     return model
 

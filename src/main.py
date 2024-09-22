@@ -25,7 +25,7 @@ def main(ticker, start_date, end_date, days_ahead):
     save_model(model)
 
     print(f"Making future predictions for the next {days_ahead} days...")
-    future_predictions = make_future_predictions(model, data['Close'].values, scaler, days_ahead=days_ahead)
+    future_predictions = make_future_predictions(model, data, scaler, days_ahead=days_ahead)
     print("Predicted future stock prices:")
     for i, price in enumerate(future_predictions, 1):
         print(f"Day {i}: {price:.2f}")

@@ -9,13 +9,14 @@ def evaluate_model(model, X_test, y_test, scaler):
     Evaluate the model's performance on the test set.
     """
     predictions = model.predict(X_test)
-    predictions = scaler.inverse_transform(predictions.reshape(-1, 1))
-    y_test_scaled = scaler.inverse_transform(y_test.reshape(-1, 1))
+    # Since only 'Close' was scaled, we need to inverse transform accordingly
+    y_test_scaled = scaler.inverse_transform(np.concatenate([y_test.reshape(-1, 1), np.zeros((len(y_test), 1))], axis=1))[:, 0]
+    predictions_scaled = scaler.inverse_transform(np.concatenate([predictions, np.zeros((len(predictions), 1))], axis=1))[:, 0]
 
-    rmse = np.sqrt(mean_squared_error(y_test_scaled, predictions))
+    rmse = np.sqrt(mean_squared_error(y_test_scaled, predictions_scaled))
     print(f"Test RMSE: {rmse:.2f}")
 
-    return predictions, y_test_scaled
+    return predictions_scaled, y_test_scaled
 
 def plot_results(y_true, y_pred, ticker):
     """

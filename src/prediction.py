@@ -4,52 +4,42 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
 def make_future_predictions(model, data, scaler, time_step=60, days_ahead=30):
     """
     Predict future stock prices for the next 'days_ahead' days.
-
-    Parameters:
-    - model: Trained LSTM model.
-    - data: Original closing prices array.
-    - scaler: Fitted MinMaxScaler object.
-    - time_step: Number of previous days used for each prediction.
-    - days_ahead: Number of future days to predict.
-
-    Returns:
-    - future_predictions: Array of predicted prices.
     """
-    # Get the last 'time_step' data points
-    last_data = data[-time_step:]
+    # Prepare initial input data
+    last_data = data[['Close', 'PE_Ratio']].values[-time_step:]
     temp_input = list(last_data)
 
     future_predictions = []
 
     for _ in range(days_ahead):
-        # Prepare the input data
+        # Prepare the input sequence
         input_seq = np.array(temp_input[-time_step:])
-        input_seq_scaled = scaler.transform(input_seq.reshape(-1, 1))
-        input_seq_scaled = input_seq_scaled.reshape(1, time_step, 1)
+        input_seq_scaled = scaler.transform(input_seq)
+        input_seq_scaled = input_seq_scaled.reshape(1, time_step, input_seq.shape[1])
 
         # Make prediction
         pred = model.predict(input_seq_scaled)
-        pred_value = scaler.inverse_transform(pred)
-        future_predictions.append(pred_value[0][0])
+        pred_value = pred[0][0]
 
-        # Append the prediction to the temp_input
-        temp_input.append(pred_value[0][0])
+        # Inverse transform the predicted value
+        pred_full = np.array([[pred_value, 0]])  # Placeholder for 'PE_Ratio'
+        pred_inverse = scaler.inverse_transform(pred_full)
+        pred_price = pred_inverse[0][0]
+        future_predictions.append(pred_price)
+
+        # Update temp_input with the new predicted value
+        # Assume P/E ratio remains the same as the last known value
+        last_pe_ratio = temp_input[-1][1]
+        temp_input.append([pred_price, last_pe_ratio])
 
     return future_predictions
-
 
 def plot_future_predictions(future_predictions, data, ticker):
     """
     Plot the predicted future prices along with historical data.
-
-    Parameters:
-    - future_predictions: Array of predicted future prices.
-    - data: Original DataFrame containing historical data.
-    - ticker: Stock ticker symbol.
     """
     last_date = data.index[-1]
     future_dates = pd.date_range(last_date + pd.Timedelta(days=1), periods=len(future_predictions))
