@@ -34,12 +34,10 @@ Video demo: ./demo/Demo.mp4
 
    ```bash
    git clone https://github.com/weizhi-du/duxchange.git
-   cd duxchange
 
-2. **Clone the repository:**
+2. **Enter the repository:**
 
    ```bash
-   git clone https://github.com/weizhi-du/duxchange.git
    cd duxchange
    
 3. **Set up virtual environment:**
