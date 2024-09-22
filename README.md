@@ -34,17 +34,24 @@ Advanced Group
    git clone https://github.com/weizhi-du/duxchange.git
    cd duxchange
    
-3. **Install required packages:**
+3. **Set up virtual environment:**
+
+   ```bash
+   sudo pip install virtualenv
+   virtualenv venv
+   source venv/bin/activate
+   
+4. **Install required packages:**
 
    ```bash
    pip install -r requirements.txt
 
-4. **Example command-line Usage:**
+5. **Example command-line Usage:**
 
    ```bash
    python src/main.py --ticker MS --start_date 2010-01-01 --end_date 2024-09-20 --days_ahead 10
 
-5. **Open with Web UI:**
+6. **Open with Web UI:**
 
    ```bash
    python app.py
