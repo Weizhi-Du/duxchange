@@ -3,8 +3,8 @@
 import React from 'react';
 
 function PredictionPlots({ ticker }) {
-  const predictionPlotURL = `/api/plots/${ticker}/prediction`;
-  const futurePredictionPlotURL = `/api/plots/${ticker}/future_prediction`;
+  const predictionPlotURL = `http://localhost:5000/api/plots/${ticker}/prediction`; // Update to point to Flask API
+  const futurePredictionPlotURL = `http://localhost:5000/api/plots/${ticker}/future_prediction`; // Update to Flask API
 
   return (
     <div>

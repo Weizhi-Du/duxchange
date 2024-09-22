@@ -42,7 +42,7 @@ Advanced Group
 4. **Example Usage:**
 
    ```bash
-   python src/main.py --ticker NVDA --start_date 2010-01-01 --end_date 2024-09-10 --days_ahead 30
+   python src/main.py --ticker MS --start_date 2010-01-01 --end_date 2024-09-20 --days_ahead 10
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/weizhi-du/duxchange)
 ![GitHub license](https://img.shields.io/github/license/weizhi-du/duxchange)
