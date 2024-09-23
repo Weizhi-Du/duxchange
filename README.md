@@ -2,17 +2,18 @@
 
 This repository serves as my submission to the WUCG Hackathon at WashU. It's a project that predicts stock prices using a Long Short-Term Memory (LSTM) neural network. 
 
+> [! WARNING] 
+> Disclaimer: Duxchange provides the services, relevant information, and content for informational purposes only and is not intended to be financial advice.
+
 ## Division
 
-Advanced Group
-
-Video demo: ./demo/Demo.mp4
+Advanced Group (The First Place!!!)
 
 ## Team Members
 
 **Weizhi Du**
 - Sophomore
-- Computer Science & Financial Engineering
+- Majors: Computer Science & Financial Engineering
 - I did everything. It's all on me :)
 
 [![text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/duw)
@@ -24,7 +25,7 @@ Video demo: ./demo/Demo.mp4
 - Trains an LSTM model, a recurrent neural network (RNN), for prediction.
 - Visualizes actual vs. predicted stock prices.
 
-## Technical Stack
+## Technical Stacks
 
 - Python, Tensorflow, Keras, Scikit-learn, ReactJS, Flask, Numpy, Pandas, Matplotlib
 
