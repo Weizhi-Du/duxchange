@@ -2,7 +2,6 @@
 
 This repository serves as my submission to the WUCG Hackathon at WashU. It's a project that predicts stock prices using a Long Short-Term Memory (LSTM) neural network. 
 
-> [! WARNING] 
 > Disclaimer: Duxchange provides the services, relevant information, and content for informational purposes only and is not intended to be financial advice.
 
 ## Division
